@@ -16,10 +16,5 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Set up Rust
-      uses: actions/setup-rust@v1
-      with:
-        profile: minimal
-
     - name: Build
       run: cargo build --verbose
